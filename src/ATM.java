@@ -304,7 +304,7 @@ public class ATM {
      * @param code the status code
      * @return the readable message
      */
-    private String getStatus(int code) {
+    String getStatus(int code) {
         switch (code) {
             case ATM.SUCCESS: return "Success.";
             case ATM.INVALID_AMOUNT: return "Invalid amount.";
