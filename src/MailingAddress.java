@@ -54,12 +54,12 @@ public class MailingAddress {
     }
 
     public String getFormattedAddress(){
-        String formattedAdd = primaryStreet + ",\n";
+        String formattedAdd = primaryStreet + "\n";
         if(secondaryStreet != null){
-            formattedAdd+=secondaryStreet+",\n";
+            formattedAdd+=secondaryStreet+"\n";
         }
-        formattedAdd+=city + ",\n";
-        formattedAdd+=state + ",\n";
+        formattedAdd+=city + ", ";
+        formattedAdd+=state + " ";
         formattedAdd+=postalCode;
         return formattedAdd;
     }
